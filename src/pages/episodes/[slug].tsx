@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import {useRouter} from 'next/router';
 import {GetStaticPaths, GetStaticProps} from 'next';
 
@@ -9,7 +10,6 @@ import {api} from '../../services/api';
 import {convertDurationToTimeString} from '../../utils/convertDurationToTimeString';
 
 import styles from './episode.module.scss';
-import Image from 'next/image';
 
 type Episode = {
     id: string;
